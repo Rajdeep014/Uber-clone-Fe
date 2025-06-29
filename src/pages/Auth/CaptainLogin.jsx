@@ -1,7 +1,6 @@
 import { Box, Button, Divider, TextField, Typography } from "@mui/material";
 import { useState } from "react";
-
-const Login = () => {
+const CaptainLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -40,7 +39,7 @@ const Login = () => {
           alignItems: "center",
           justifyContent: "center",
           px: 2,
-          mt: 4, // Added margin-top for spacing
+          mt: 4,
         }}
       >
         <Box
@@ -58,7 +57,7 @@ const Login = () => {
         >
           <Typography variant="h5" textAlign={"center"}>
             {" "}
-            Login as User{" "}
+            Login as captain{" "}
           </Typography>
 
           <Divider sx={{}} />
@@ -148,9 +147,9 @@ const Login = () => {
                 borderColor: "#222",
               },
             }}
-            onClick={() => (window.location.href = "/captain-login")}
+            onClick={() => (window.location.href = "/login")}
           >
-            Login as Captain
+            Login as User
           </Button>
           <Typography
             variant="body2"
@@ -187,4 +186,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default CaptainLogin;
