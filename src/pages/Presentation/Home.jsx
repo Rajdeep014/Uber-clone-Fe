@@ -66,7 +66,7 @@ const Home = () => {
 
         {/* Button wrapped in anchor tag */}
         <a
-          href="/signup"
+          href="/login"
           style={{
             textDecoration: "none",
             marginTop: 24,
